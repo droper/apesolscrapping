@@ -14,5 +14,7 @@ SPIDER_MODULES = ['apesol.spiders']
 NEWSPIDER_MODULE = 'apesol.spiders'
 DEFAULT_ITEM_CLASS = 'apesol.items.ApesolItem'
 
+ITEM_PIPELINES = {'apesol.pipelines.ApesolPipeline': 1}
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'apesol (+http://www.yourdomain.com)'

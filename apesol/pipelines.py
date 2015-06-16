@@ -8,4 +8,5 @@
 
 class ApesolPipeline(object):
     def process_item(self, item, spider):
+        item['date'] = item['date'].replace('en ', '').replace('- ','')
         return item
